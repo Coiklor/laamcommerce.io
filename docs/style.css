@@ -678,7 +678,7 @@ section{
 
 
 .home{
-    background: url(Images/IMG_0500smaller.jpg), no-repeat center center;
+    background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
     background-size: 390px 850px;
     min-height: 100vh;
     display: flex;
@@ -697,7 +697,7 @@ section{
   
 
 .home{
-    background: url(Images/IMG_0500smaller.jpg), no-repeat center center;
+    background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
     background-size: 380px 670px; 
 }
 }
@@ -706,7 +706,7 @@ section{
   
 
     .home{
-        background: url(Images/IMG_0500smaller.jpg), no-repeat center center;
+        background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
         background-size: 280px 540px; 
     }
     }
