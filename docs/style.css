@@ -60,15 +60,14 @@ section{
 }
 
 .header{
-    background-color: #000000/* rgba(0,0,0, .7) */;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .0rem 7%;
-    border-bottom: var(--border);
-    position: fixed;
+    padding: 1rem 2rem;
     top: 0; left: 0; right: 0;
+    width: 100%;
     z-index: 50;
+    position: absolute;
 }
 
 .header .logo img{
@@ -248,69 +247,20 @@ section{
     color: #fca401;
 } */
 
-.header .cart-items-container{
-    position: absolute;
-    top: 100%; right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 35rem;
-    background-color: #13131a;
-    padding: 0 1.5rem;
-}
-
-.header .cart-items-container .cart-item{
-    position: relative;
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header .cart-items-container .cart-item .fa-times{
-    position: absolute;
-    top: 1rem; right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #fff;
-}
-
-.header .cart-items-container .cart-item .fa-times:hover{
-    color: #15ecf3;
-}
-
-.header .cart-items-container .cart-item img{
-    height: 7rem;
-}
-
-.header .cart-items-container.active{
-    right: 0;
-}
-
-.header .cart-items-container .cart-item .content h3{
-    font-size: 1.5rem;
-    color: #15ecf3;
-    padding-bottom: .5rem;
-}
-
-.header .cart-items-container .cart-item .content .price{
-    font-size: 1.5rem;
-    color: #15ecf3;
-}
-
-.header .cart-items-container .btn{
-    width: 100%;
-    text-transform: center;
-}
-
 .home{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: url(Images/IMG_01002.jpg), no-repeat center center;
-    background-size: cover
+    background: url(Images/IMG_0100.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
 
 .home .content{
     max-width: 60rem;
+    text-align: center;
 }
 
 .home .content h3{
@@ -318,7 +268,6 @@ section{
     text-transform: uppercase;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527);
-
 }
 
 .home .content p{
@@ -327,7 +276,7 @@ section{
     line-height: 1.8;
     padding: 1rem 0;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); 
 }
 
 
@@ -592,6 +541,7 @@ section{
     }
     .header{
         padding: 1.5rem 2rem;
+        position: fixed;
     }
     section{
         padding: 2rem;
@@ -610,13 +560,12 @@ section{
         margin-bottom: -1px;
     }
 
-    .header .navbar .vertical-link #cars{
+    /* .header .navbar .vertical-link #cars{
         margin-left: -1rem;
         padding-top: 2rem;
         margin-bottom: -25px;
-    }
+    } */
 }
-
 @media (max-width:800px){
     #menu-btn{
         display: inline-block;
@@ -624,7 +573,6 @@ section{
     .header .navbar{
         display: none;
     }
-
     .header .navbar{
         position: absolute;
         top: 100%; right: -100%;
@@ -633,27 +581,22 @@ section{
         height: calc(100vh - 9.5rem);
         display: block;
     }
-
     .header .navbar.active{
         right:0;
     }
-
     .header .navbar li{
         display: block !important;
         margin-left: 15px;
         padding: 1rem 2rem;
     }
-
     .header .navbar li a{
         margin: 10px 0;
-    }  
-
+    }
     .home{
         background-repeat: no-repeat;
         justify-content: center;
         text-align: center;
     }
-
     .home .content h3{
         font-size: 4.5rem;
     }
@@ -670,43 +613,40 @@ section{
         padding: 0;
     }
 }
-
 @media (max-width:450px){
     html{
         font-size: 40%;
     }
-
-
 .home{
     background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
-    background-size: 390px 850px;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 2rem;
    
 }
-
 .home .content p {
     font-size: 2rem;
 }
-
 }
-
 @media (max-width:375px){
-  
-
 .home{
     background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
-    background-size: 380px 670px; 
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
 }
 }
-
 @media (max-width:270px){
-  
-
     .home{
         background: url(Images/IMG_0501smaller.jpg), no-repeat center center;
-        background-size: 280px 540px; 
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
     }
     }
